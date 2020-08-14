@@ -54,17 +54,17 @@ timestamp color 1
 timestamp rot 0
 timestamp font 0
 timestamp char size 1.000000
-timestamp def "Sun May 10 15:44:20 2020"
+timestamp def "Mon May 11 10:41:44 2020"
 with string
     string on
     string loctype view
-    string 0.54044117647, 0.835784313725
+    string 0.48406862745, 0.843137254901
     string color 1
     string rot 0
     string font 6
     string just 0
     string char size 1.350000
-    string def "film1 L=23.5"
+    string def "film1 L=23.5 m=100"
 r0 off
 link r0 to g0
 r0 type above
@@ -111,7 +111,7 @@ g0 fixedpoint xy 0.000000, 0.000000
 g0 fixedpoint format general general
 g0 fixedpoint prec 6, 6
 with g0
-    world -16, -0.04, 16, 150
+    world -16, 0, 16, 150
     stack world 0, 0, 0, 0
     znorm 1
     view 0.101716, 0.078431, 1.194853, 0.917892
@@ -138,7 +138,7 @@ with g0
     xaxis  label layout para
     xaxis  label place auto
     xaxis  label char size 1.000000
-    xaxis  label font 2
+    xaxis  label font 6
     xaxis  label color 1
     xaxis  label place normal
     xaxis  tick on
@@ -174,7 +174,7 @@ with g0
     xaxis  ticklabel stop type auto
     xaxis  ticklabel stop 0.000000
     xaxis  ticklabel char size 1.000000
-    xaxis  ticklabel font 0
+    xaxis  ticklabel font 6
     xaxis  ticklabel color 1
     xaxis  tick place both
     xaxis  tick spec type none
@@ -189,7 +189,7 @@ with g0
     yaxis  label layout para
     yaxis  label place auto
     yaxis  label char size 1.000000
-    yaxis  label font 0
+    yaxis  label font 6
     yaxis  label color 1
     yaxis  label place normal
     yaxis  tick on
@@ -225,7 +225,7 @@ with g0
     yaxis  ticklabel stop type auto
     yaxis  ticklabel stop 0.000000
     yaxis  ticklabel char size 1.000000
-    yaxis  ticklabel font 0
+    yaxis  ticklabel font 6
     yaxis  ticklabel color 1
     yaxis  tick place both
     yaxis  tick spec type none
@@ -254,7 +254,7 @@ with g0
     frame pattern 1
     frame background color 0
     frame background pattern 0
-    s0 hidden false
+    s0 hidden true
     s0 type xy
     s0 symbol 0
     s0 symbol size 1.000000
@@ -303,7 +303,7 @@ with g0
     s0 errorbar riser clip length 0.100000
     s0 comment "Cols 1:6"
     s0 legend  "\xm\f{}\sB\N T=0.50"
-    s1 hidden false
+    s1 hidden true
     s1 type xy
     s1 symbol 0
     s1 symbol size 1.000000
@@ -355,10 +355,10 @@ with g0
     s2 hidden false
     s2 type xy
     s2 symbol 2
-    s2 symbol size 0.350000
-    s2 symbol color 10
+    s2 symbol size 0.500000
+    s2 symbol color 2
     s2 symbol pattern 1
-    s2 symbol fill color 10
+    s2 symbol fill color 2
     s2 symbol fill pattern 1
     s2 symbol linewidth 1.0
     s2 symbol linestyle 1
@@ -366,9 +366,9 @@ with g0
     s2 symbol char font 0
     s2 symbol skip 0
     s2 line type 1
-    s2 line linestyle 1
-    s2 line linewidth 0.5
-    s2 line color 10
+    s2 line linestyle 2
+    s2 line linewidth 1.0
+    s2 line color 2
     s2 line pattern 1
     s2 baseline type 0
     s2 baseline off
@@ -390,7 +390,7 @@ with g0
     s2 avalue offset 0.000000 , 0.000000
     s2 errorbar on
     s2 errorbar place both
-    s2 errorbar color 10
+    s2 errorbar color 2
     s2 errorbar pattern 1
     s2 errorbar size 1.000000
     s2 errorbar linewidth 1.0
@@ -400,8 +400,8 @@ with g0
     s2 errorbar riser clip off
     s2 errorbar riser clip length 0.100000
     s2 comment "Cols 1:8"
-    s2 legend  "\xm\f{}\sF\Stot\N T=0.50"
-    s3 hidden false
+    s2 legend  "\xm\f{}\sF\S\N T=0.50"
+    s3 hidden true
     s3 type xy
     s3 symbol 0
     s3 symbol size 1.000000
@@ -450,7 +450,7 @@ with g0
     s3 errorbar riser clip length 0.100000
     s3 comment "Cols 1:6"
     s3 legend  "\xm\f{}\sB\N T=0.20"
-    s4 hidden false
+    s4 hidden true
     s4 type xy
     s4 symbol 0
     s4 symbol size 1.000000
@@ -502,10 +502,10 @@ with g0
     s5 hidden false
     s5 type xy
     s5 symbol 1
-    s5 symbol size 0.350000
-    s5 symbol color 14
+    s5 symbol size 0.500000
+    s5 symbol color 4
     s5 symbol pattern 1
-    s5 symbol fill color 14
+    s5 symbol fill color 4
     s5 symbol fill pattern 1
     s5 symbol linewidth 1.0
     s5 symbol linestyle 1
@@ -513,9 +513,9 @@ with g0
     s5 symbol char font 0
     s5 symbol skip 0
     s5 line type 1
-    s5 line linestyle 1
+    s5 line linestyle 2
     s5 line linewidth 0.5
-    s5 line color 14
+    s5 line color 4
     s5 line pattern 1
     s5 baseline type 0
     s5 baseline off
@@ -537,7 +537,7 @@ with g0
     s5 avalue offset 0.000000 , 0.000000
     s5 errorbar on
     s5 errorbar place both
-    s5 errorbar color 14
+    s5 errorbar color 4
     s5 errorbar pattern 1
     s5 errorbar size 1.000000
     s5 errorbar linewidth 1.0
@@ -547,4 +547,4 @@ with g0
     s5 errorbar riser clip off
     s5 errorbar riser clip length 0.100000
     s5 comment "Cols 1:8"
-    s5 legend  "\xm\f{}\sF\Stot\N T=0.20"
+    s5 legend  "\xm\f{}\sF\S\N T=0.20"
